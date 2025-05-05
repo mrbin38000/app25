@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Utilisation d'une couleur légèrement plus claire que la bordure pour effet lumineux -->
+    <solid android:color="#FF000000" />
+    <!-- Option: Ajouter un dégradé pour un effet plus lumineux -->
+  
+</shape>

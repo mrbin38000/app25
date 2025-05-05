@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Votre couleur jaune pour le conteneur QR -->
+    <solid android:color="#ffc300" /> <!-- Remplacez cette couleur par celle de votre qr_code_container actuel -->
+    
+    <!-- Coins arrondis s'il y en a dans votre conteneur original -->
+    <corners android:radius="5dp" /> <!-- Ajustez la valeur selon votre design -->
+</shape>

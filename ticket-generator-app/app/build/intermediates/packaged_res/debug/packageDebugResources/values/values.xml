@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="access_orange">#FF8C00</color>
+    <color name="background_dark">#222222</color>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="ticket_background">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFCC00</color>
+    <dimen name="dynamic_border_corner_radius">16dp</dimen>
+    <string name="app_name">Générateur de Billet</string>
+    <string name="back_to_form">Retour au formulaire</string>
+    <string name="billet_info">Billet 1/1</string>
+    <string name="generate">Générer le Billet</string>
+    <string name="hint_access">Accès (ex: L16)</string>
+    <string name="hint_birthdate">Date de naissance (ex: 20/08/1996)</string>
+    <string name="hint_category">Catégorie (ex: CATÉGORIE 1)</string>
+    <string name="hint_court">Nom du court (ex: Court Suzanne-Lenglen)</string>
+    <string name="hint_date">Date (ex: DIMANCHE 26 MAI 2024)</string>
+    <string name="hint_gates">Portes (ex: 1, 12, 30)</string>
+    <string name="hint_name">Nom (ex: M PIERRE VICTOR)</string>
+    <string name="hint_opening">Ouverture (ex: 10:00)</string>
+    <string name="hint_row">Rang (ex: 12)</string>
+    <string name="hint_seat">Place (ex: 80)</string>
+    <string name="hint_session">Session (ex: SESSION DE JOURNÉE)</string>
+    <string name="hint_stair">Escalier (ex: 16)</string>
+    <string name="hint_starting_time">À partir de (ex: 10:30)</string>
+    <string name="title_form">Formulaire de Billet</string>
+    <string name="title_ticket">Votre Billet</string>
+    <style name="Theme.TicketGenerator" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+    <style name="TicketAccess">
+        <item name="android:textColor">@color/access_orange</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketCategory">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketCourtName">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketDetailLabel">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketDetailValue">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketHeaderText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketLocationLabel">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketLocationValue">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketPersonalText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TicketRealTime">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketStartingTime">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TicketSubHeaderText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
