@@ -55,6 +55,8 @@
         </activity>
         <activity android:name="com.example.ticketgenerator.TicketFormActivity" />
         <activity android:name="com.example.ticketgenerator.TicketActivity" />
+        <activity android:name="com.example.ticketgenerator.TicketFormAltActivity" />
+        <activity android:name="com.example.ticketgenerator.TicketAltActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

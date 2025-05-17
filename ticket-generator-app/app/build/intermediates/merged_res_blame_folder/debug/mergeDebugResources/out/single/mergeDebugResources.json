@@ -1,86 +1,110 @@
 [
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_diagonal_bar.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\diagonal_bar.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_barrehaut.png.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\barrehaut.png"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_container.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_container.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\raw_animated_border.json.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\raw\\animated_border.json"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_button_bg.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\button_bg.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qrcode.png.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qrcode.png"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_container_fix.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_container_fix.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_dynamic_border.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\dynamic_border.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rgtitle_bold.ttf.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rgtitle_bold.ttf"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_diagonal_bar.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\diagonal_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_rectangle_drawable.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\rectangle_drawable.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket_alt.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket_alt.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_illumination_dot.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\illumination_dot.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_container_fix_alt.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_container_fix_alt.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rg_text_regular.otf.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rg_text_regular.otf"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_background.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_background.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_border_rounded.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\border_rounded.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket_form_alt.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket_form_alt.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\raw_animated_border.json.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\raw\\animated_border.json"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket_form.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket_form.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qrcode.png.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qrcode.png"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rg_title_light.otf.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rg_title_light.otf"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rg_text_regular.otf.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rg_text_regular.otf"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rg_text_bold.otf.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rg_text_bold.otf"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_rectangle_drawable.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\rectangle_drawable.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_barrehaut.png.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\barrehaut.png"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_illumination_dot.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\illumination_dot.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rg_title_light.otf.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rg_title_light.otf"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_border_rounded.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\border_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket_form.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket_form.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_rolex.png.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\rolex.png"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_border_rounded_yellow.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\border_rounded_yellow.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rgtitle_bold.ttf.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rgtitle_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_background.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_background.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_border_rounded_yellow.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\border_rounded_yellow.xml"
     },
     {
-        "merged": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_dynamic_border.xml.flat",
-        "source": "C:\\Users\\Clement\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\dynamic_border.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_bnp.png.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\bnp.png"
     },
     {
-        "merged": "com.example.ticketgenerator.app-debug-34:/layout_activity_ticket_form.xml.flat",
-        "source": "com.example.ticketgenerator.app-main-36:/layout/activity_ticket_form.xml"
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_container.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_button_bg.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket.xml"
+    },
+    {
+        "merged": "com.example.ticketgenerator.app-debug-34:/layout_activity_ticket_alt.xml.flat",
+        "source": "com.example.ticketgenerator.app-main-36:/layout/activity_ticket_alt.xml"
+    },
+    {
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_qr_code_container_fix.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_container_fix.xml"
+    },
+    {
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_gradient_background.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\gradient_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\font_rg_text_bold.otf.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\font\\rg_text_bold.otf"
     }
 ]

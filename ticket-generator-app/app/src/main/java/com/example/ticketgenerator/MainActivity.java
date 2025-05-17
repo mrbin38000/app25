@@ -18,5 +18,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, TicketFormActivity.class);
             startActivity(intent);
         });
+        findViewById(R.id.btnStartFormAlt).setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, TicketFormAltActivity.class);
+            startActivity(intent);
+        });
+
     }
 }

@@ -2573,6 +2573,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable barrehaut
+drawable bnp
 drawable border_rounded
 drawable border_rounded_yellow
 drawable btn_checkbox_checked_mtrl
@@ -2591,6 +2592,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable diagonal_bar
 drawable dynamic_border
+drawable gradient_background
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -2679,8 +2681,10 @@ drawable notify_panel_notification_icon_bg
 drawable qr_code_background
 drawable qr_code_container
 drawable qr_code_container_fix
+drawable qr_code_container_fix_alt
 drawable qrcode
 drawable rectangle_drawable
+drawable rolex
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2789,6 +2793,7 @@ id bounceEnd
 id bounceStart
 id btnGenerate
 id btnStartForm
+id btnStartFormAlt
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2898,6 +2903,7 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
+id fixedHeaderContainer
 id flip
 id floating
 id forever
@@ -2948,6 +2954,8 @@ id line3
 id linear
 id listMode
 id list_item
+id logoBnp
+id logoRolex
 id marquee
 id masked
 id match_constraint
@@ -3341,7 +3349,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_ticket
+layout activity_ticket_alt
 layout activity_ticket_form
+layout activity_ticket_form_alt
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
