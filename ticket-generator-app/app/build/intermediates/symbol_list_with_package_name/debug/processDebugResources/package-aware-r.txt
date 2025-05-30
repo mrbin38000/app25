@@ -3062,6 +3062,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id rootLayout
 id rounded
 id row_index_key
 id save_non_transition_alpha
@@ -3175,14 +3176,12 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtAccess
-id txtBirthdate
 id txtCategory
 id txtCourt
 id txtDate
 id txtGates
 id txtName
 id txtOpening
-id txtRealTime
 id txtRow
 id txtSeat
 id txtSession

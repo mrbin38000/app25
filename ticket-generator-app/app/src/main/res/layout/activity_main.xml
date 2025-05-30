@@ -37,7 +37,7 @@
         android:id="@+id/btnStartFormAlt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Billet pour la session de nuit"
+        android:text="Billet pour la session de soirée"
         android:backgroundTint="@color/yellow"
         android:textColor="@color/black"
         android:layout_marginTop="16dp"

@@ -1,108 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#151515"
     tools:context=".TicketActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- Partie fixe -->
+    <ImageView
+        android:id="@+id/barreHaut"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="54dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/barrehaut"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Déplacé l'ImageView barreHaut ici, en dehors du padding -->
-        <ImageView
-            android:id="@+id/barreHaut"
+    <LinearLayout
+        android:id="@+id/fixedHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        app:layout_constraintTop_toBottomOf="@id/barreHaut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Person Info Section -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/barrehaut"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:layout_height="110dp"
+            android:background="#151515"
+            android:orientation="vertical">
 
-        <!-- Le reste du contenu avec padding -->
+            <TextView
+                android:id="@+id/txtDate"
+                style="@style/TicketHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/rg_title_light"
+                android:text="DIMANCHE 26 MAI 2024"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSession"
+                style="@style/TicketHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/rgtitle_bold"
+                android:text="SESSION DE JOURNÉE"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/TicketSubHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/rgtitle_bold"
+                android:text="@string/billet_info"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/border_rounded"
+                android:radius="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Partie scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/fixedHeaderContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="22dp"
-            android:paddingRight="22dp"
-            app:layout_constraintTop_toBottomOf="@id/barreHaut"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardTicket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@color/ticket_background"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="735dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Supprimé l'ImageView barreHaut qui était ici -->
-
-                    <!-- Person Info Section -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="110dp"
-                        android:background="#151515"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/txtDate"
-                            style="@style/TicketHeaderText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/rg_title_light"
-                            android:text="DIMANCHE 26 MAI 2024"
-                            android:textSize="13sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txtSession"
-                            style="@style/TicketHeaderText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="SESSION DE JOURNÉE"
-                            android:fontFamily="@font/rgtitle_bold"
-                            android:textSize="13sp" />
-
-                        <TextView
-                            style="@style/TicketSubHeaderText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/rg_text_regular"
-                            android:text="@string/billet_info"
-                            android:textSize="14sp" />
-
-                        <View
-                            android:layout_width="16dp"
-                            android:layout_height="4dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:background="@drawable/border_rounded"
-                            android:radius="10dp" />
-                    </LinearLayout>
-
-                    <!-- Reste du code inchangé -->
+                    <!-- QR Code Section -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="209dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginBottom="-5dp"
                         android:background="@drawable/qr_code_container_fix"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:layout_marginTop="-5dp"
-                        android:layout_marginBottom="-5dp">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imgQrCode"
@@ -115,9 +129,10 @@
                             android:src="@drawable/qrcode" />
                     </LinearLayout>
 
+                    <!-- Nom -->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="76dp"
+                        android:layout_height="60dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -125,24 +140,14 @@
                             style="@style/TicketPersonalText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="25dp"
                             android:fontFamily="@font/rgtitle_bold"
-                            android:text="M Pierre Victor"
+                            android:text="M PIERRE VICTOR"
                             android:textAlignment="center"
                             android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/txtBirthdate"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Naissance: 20/08/1996"
-                            android:fontFamily="@font/rg_text_regular"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="14sp" />
                     </LinearLayout>
 
-                    <!-- Gates and Opening Section -->
+                    <!-- Portes & Accès -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -163,9 +168,10 @@
                                 style="@style/TicketDetailLabel"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_regular"
+                                android:paddingTop="2dp"
                                 android:text="Portes"
                                 android:textColor="#00503c"
-                                android:fontFamily="@font/rg_text_regular"
                                 android:textSize="15sp" />
 
                             <TextView
@@ -173,8 +179,9 @@
                                 style="@style/TicketDetailValue"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1,  12,  30"
                                 android:fontFamily="@font/rg_text_bold"
+                                android:paddingBottom="2dp"
+                                android:text="1,  12,  30"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
@@ -192,9 +199,10 @@
                                 style="@style/TicketDetailLabel"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Ouverture"
-                                android:textColor="#00503c"
                                 android:fontFamily="@font/rg_text_regular"
+                                android:paddingTop="2dp"
+                                android:text="Accès au stade"
+                                android:textColor="#00503c"
                                 android:textSize="15sp" />
 
                             <TextView
@@ -202,21 +210,21 @@
                                 style="@style/TicketDetailValue"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="10:00"
                                 android:fontFamily="@font/rg_text_bold"
+                                android:paddingBottom="2dp"
+                                android:text="10:00"
                                 android:textSize="16sp" />
                         </LinearLayout>
                     </LinearLayout>
+
                     <!-- Dynamic Court Info Section -->
-                    <!-- Remplacez votre FrameLayout par ceci -->
                     <com.example.ticketgenerator.customview.AnimatedTicketBorderView
                         android:id="@+id/dynamicBorderLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:padding="0dp"
                         android:background="@drawable/dynamic_border"
-                        >
+                        android:padding="0dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -232,6 +240,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
                                 android:fontFamily="@font/rg_text_bold"
+                                android:paddingTop="5dp"
                                 android:text="Court Suzanne-Lenglen"
                                 android:textSize="16sp" />
 
@@ -241,7 +250,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/rg_text_regular"
-                                android:text="à partir de 10:30"
+                                android:text="Accès au(x) court(s) pas avant 10:30"
                                 android:textSize="14sp" />
 
                             <TextView
@@ -251,35 +260,25 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
                                 android:fontFamily="@font/rg_text_bold"
+                                android:paddingBottom="5dp"
                                 android:text="Accès L16"
                                 android:textColor="#cc4e0e"
                                 android:textSize="29sp" />
-
-                            <TextView
-                                android:id="@+id/txtRealTime"
-                                style="@style/TicketRealTime"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="6dp"
-                                android:fontFamily="@font/rgtitle_bold"
-                                android:text="11:32:55"
-                                android:textSize="17sp"
-                                android:textStyle="bold" />
                         </LinearLayout>
                     </com.example.ticketgenerator.customview.AnimatedTicketBorderView>
 
-                    <!-- Location Section -->
+                    <!-- Location & Catégorie -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
-                        android:layout_marginRight="7dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="18dp"
                         android:background="@drawable/qr_code_container_fix"
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <!-- Ligne horizontale avec Escalier / Rang / Place -->
+                        <!-- Escalier / Rang / Place -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -288,18 +287,21 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/border_rounded"
                                 android:orientation="vertical"
-                                android:padding="12dp">
+                                android:padding="11dp">
 
                                 <TextView
                                     style="@style/TicketLocationLabel"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Escalier"
                                     android:fontFamily="@font/rg_text_regular"
+                                    android:text="Escalier"
                                     android:textColor="#00503c"
                                     android:textSize="15sp" />
 
@@ -308,26 +310,29 @@
                                     style="@style/TicketLocationValue"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="16"
                                     android:fontFamily="@font/rg_text_bold"
+                                    android:text="16"
                                     android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="4dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginBottom="4dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/border_rounded"
                                 android:orientation="vertical"
-                                android:padding="12dp">
+                                android:padding="11dp">
 
                                 <TextView
                                     style="@style/TicketLocationLabel"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Rang"
                                     android:fontFamily="@font/rg_text_regular"
+                                    android:text="Rang"
                                     android:textColor="#00503c"
                                     android:textSize="15sp" />
 
@@ -336,26 +341,29 @@
                                     style="@style/TicketLocationValue"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="12"
                                     android:fontFamily="@font/rg_text_bold"
+                                    android:text="12"
                                     android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="4dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/border_rounded"
                                 android:orientation="vertical"
-                                android:padding="12dp">
+                                android:padding="11dp">
 
                                 <TextView
                                     style="@style/TicketLocationLabel"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Place"
                                     android:fontFamily="@font/rg_text_regular"
+                                    android:text="Place"
                                     android:textColor="#00503c"
                                     android:textSize="15sp" />
 
@@ -364,14 +372,13 @@
                                     style="@style/TicketLocationValue"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="80"
                                     android:fontFamily="@font/rg_text_bold"
+                                    android:text="80"
                                     android:textSize="16sp" />
                             </LinearLayout>
                         </LinearLayout>
 
-                        <!-- CATEGORIE EN DESSOUS DANS LE MÊME CADRE -->
-
+                        <!-- Catégorie -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -389,14 +396,205 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/rg_text_bold"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
                                 android:text="CATÉGORIE 1"
                                 android:textAlignment="center"
                                 android:textSize="13sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <!-- Logos -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/logoBnp"
+                            android:layout_width="90dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="37dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bnp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/logoRolex"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="37dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/rolex"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Détails commande -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <!-- Cadre 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_rounded"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_regular"
+                                android:text="N° de commande"
+                                android:textAlignment="center"
+                                android:textColor="#00503c"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_bold"
+                                android:text="16542"
+                                android:textAlignment="center"
+                                android:textColor="#010101"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- Cadre 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_rounded"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_regular"
+                                android:text="N° de billet"
+                                android:textAlignment="center"
+                                android:textColor="#00503c"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_bold"
+                                android:text="28422300342"
+                                android:textAlignment="center"
+                                android:textColor="#010101"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- Cadre 3 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_rounded"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_regular"
+                                android:text="N° de code à barre"
+                                android:textAlignment="center"
+                                android:textColor="#00503c"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_bold"
+                                android:text="126350245124541"
+                                android:textAlignment="center"
+                                android:textColor="#010101"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- Cadre 4 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_rounded"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_regular"
+                                android:text="Montant du billet"
+                                android:textAlignment="center"
+                                android:textColor="#00503c"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_bold"
+                                android:text="100€"
+                                android:textAlignment="center"
+                                android:textColor="#010101"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- Cadre 5 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_rounded"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_regular"
+                                android:text="Acheteur"
+                                android:textAlignment="center"
+                                android:textColor="#00503c"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rg_text_bold"
+                                android:text="M CLAUDE ANTHROPIC"
+                                android:textAlignment="center"
+                                android:textColor="#010101"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ public class TicketFormActivity extends AppCompatActivity {
         editDate = findViewById(R.id.editDate);
         editSession = findViewById(R.id.editSession);
         editName = findViewById(R.id.editName);
-        editBirthdate = findViewById(R.id.editBirthdate);
+        //editBirthdate = findViewById(R.id.editBirthdate);
         editGates = findViewById(R.id.editGates);
         editOpening = findViewById(R.id.editOpening);
         editCourt = findViewById(R.id.editCourt);
@@ -40,9 +40,9 @@ public class TicketFormActivity extends AppCompatActivity {
             // Pass all form data to TicketActivity
             intent.putExtra("date", getTextOrDefault(editDate, "DIMANCHE 26 MAI 2024"));
             intent.putExtra("session", getTextOrDefault(editSession, "SESSION DE JOURNÉE"));
-            intent.putExtra("name", getTextOrDefault(editName, "M Pierre Victor"));
-            intent.putExtra("birthdate", getTextOrDefault(editBirthdate, "20/08/1996"));
-            intent.putExtra("gates", getTextOrDefault(editGates, "1, 12, 30"));
+            intent.putExtra("name", getTextOrDefault(editName, "M PIERRE VICTOR"));
+            //intent.putExtra("birthdate", getTextOrDefault(editBirthdate, "20/08/1996"));
+            intent.putExtra("gates", getTextOrDefault(editGates, "1,   12,   30"));
             intent.putExtra("opening", getTextOrDefault(editOpening, "10:00"));
             intent.putExtra("court", getTextOrDefault(editCourt, "Court Suzanne-Lenglen"));
             intent.putExtra("startingTime", getTextOrDefault(editStartingTime, "10:30"));

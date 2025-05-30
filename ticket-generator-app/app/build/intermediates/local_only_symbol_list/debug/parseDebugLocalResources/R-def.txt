@@ -56,16 +56,15 @@ id formTitleText
 id imgQrCode
 id logoBnp
 id logoRolex
+id rootLayout
 id titleText
 id txtAccess
-id txtBirthdate
 id txtCategory
 id txtCourt
 id txtDate
 id txtGates
 id txtName
 id txtOpening
-id txtRealTime
 id txtRow
 id txtSeat
 id txtSession

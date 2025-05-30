@@ -84,12 +84,12 @@
         "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\qr_code_container.xml"
     },
     {
-        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_button_bg.xml.flat",
-        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\button_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\layout_activity_ticket.xml.flat",
         "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\layout\\activity_ticket.xml"
+    },
+    {
+        "merged": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-debug-34:\\drawable_button_bg.xml.flat",
+        "source": "C:\\Users\\Clément\\.gradle\\daemon\\8.11.1\\com.example.ticketgenerator.app-main-36:\\drawable\\button_bg.xml"
     },
     {
         "merged": "com.example.ticketgenerator.app-debug-34:/layout_activity_ticket_alt.xml.flat",
